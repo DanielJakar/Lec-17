@@ -16,5 +16,13 @@ public abstract class Animal {
         System.out.println(food);
     }
 
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "food=" + food +
+                ", name='" + name + '\'' +
+                '}';
+    }
 
+    protected abstract void makeSound();
 }
