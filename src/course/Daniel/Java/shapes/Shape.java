@@ -1,4 +1,4 @@
-package course.Daniel.Java;
+package course.Daniel.Java.shapes;
 
 /**
  * Created by Jakars on 07/03/2017.
