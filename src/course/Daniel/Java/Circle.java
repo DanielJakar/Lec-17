@@ -6,19 +6,34 @@ package course.Daniel.Java;
 public class Circle extends Shape{
     private double r;
 
-    public Circle() {
+    public Circle(String color, double r) {
+        super(color);
+        this.r = r;
     }
 
-    public double getArea (){
+
+    @Override
+    public double getArea() {
         return Math.PI*(r*r);
     }
 
-    public double getPerimeter(){
-        return 2*Math.PI*r;
-
+    @Override
+    public double getPerimeter() {
+        return 2*(Math.PI)*r;
     }
 
     public double getRadius() {
         return r;
+    }
+
+    public void setR(double r) {
+        this.r = r;
+    }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "r=" + r +
+                "} " + super.toString();
     }
 }

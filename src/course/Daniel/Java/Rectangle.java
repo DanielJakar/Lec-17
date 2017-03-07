@@ -7,17 +7,20 @@ public class Rectangle extends Shape {
     private int a;
     private int b;
 
-    public Rectangle() {
+    public Rectangle(String color, int a, int b) {
+        super(color);
+        this.a = a;
+        this.b = b;
     }
 
-    public double getArea(){
+    @Override
+    public double getArea() {
         return a*b;
-
     }
 
-    public double getPerimeter(){
+    @Override
+    public double getPerimeter() {
         return (a+b)*2;
-
     }
 
     public int getA() {
@@ -26,5 +29,13 @@ public class Rectangle extends Shape {
 
     public int getB() {
         return b;
+    }
+
+    public void setA(int a) {
+        this.a = a;
+    }
+
+    public void setB(int b) {
+        this.b = b;
     }
 }

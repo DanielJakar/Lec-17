@@ -6,14 +6,16 @@ package course.Daniel.Java;
 public abstract class Shape {
     private String color;
 
-    protected void Shape(){
-
+    protected Shape(String color) {
+        this.color = color;
     }
 
     @Override
     public String toString() {
-        return "Shape{" +
+        return getClass().getSimpleName() +"{" +
                 "color='" + color + '\'' +
+                "Area='" + getArea() + '\'' +
+                "Perimeter='" + getPerimeter() + '\'' +
                 '}';
     }
 
