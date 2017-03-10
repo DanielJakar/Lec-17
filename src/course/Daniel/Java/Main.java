@@ -3,12 +3,24 @@ package course.Daniel.Java;
 import course.Daniel.Java.shapes.Circle;
 import course.Daniel.Java.shapes.Rectangle;
 import course.Daniel.Java.shapes.Shape;
+import course.Daniel.Java.zoo.Animal;
+import course.Daniel.Java.zoo.Cow;
+import course.Daniel.Java.zoo.Food;
 
 import java.util.ArrayList;
 
 public class Main {
 
     public static void main(String[] args) {
+
+        Cow c = new Cow(Food.GRASS , "Berta", "Moo");
+
+        System.out.println(c.toString());
+        c.eat();
+        c.makeSound();
+
+
+
 
 //        DayOfWeek d = DayOfWeek.SUNDAY;
 //	    switch (d){
@@ -28,21 +40,21 @@ public class Main {
 //            case SATURDAY:
 //                break;
 //        }
-
-        ArrayList<Shape> shapes = new ArrayList<>();
-        shapes.add(new Circle("Black", 10));
-        shapes.add(new Circle("Yellow", 25));
-        shapes.add(new Rectangle("Orange",10,20));
-        shapes.add(new Rectangle("Blue", 15,23));
-
-        for (Shape s : shapes) {
-            if (s instanceof Rectangle){
-                Rectangle r = (Rectangle) s; //Explicit type casting
-                int b = r.getB();
+//
+//        ArrayList<Shape> shapes = new ArrayList<>();
+//        shapes.add(new Circle("Black", 10));
+//        shapes.add(new Circle("Yellow", 25));
+//        shapes.add(new Rectangle("Orange",10,20));
+//        shapes.add(new Rectangle("Blue", 15,23));
+//
+//        for (Shape s : shapes) {
+//            if (s instanceof Rectangle){
+//                Rectangle r = (Rectangle) s; //Explicit type casting
+//                int b = r.getB();
 //                int x = 10;
 //                long y = x; //implicit type casting
-            }
-        }
+//            }
+//        }
     }
 
 

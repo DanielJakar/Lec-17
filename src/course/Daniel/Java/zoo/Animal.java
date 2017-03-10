@@ -7,6 +7,9 @@ public abstract class Animal {
     public Food food;
     public String name;
 
+    public Animal() {
+    }
+
     public Animal(Food food, String name) {
         this.food = food;
         this.name = name;
@@ -18,10 +21,9 @@ public abstract class Animal {
 
     @Override
     public String toString() {
-        return "Animal{" +
+        return "Animal = " + getClass().getSimpleName() + ":" +
                 "food=" + food +
-                ", name='" + name + '\'' +
-                '}';
+                ", name='" + name + ", ";
     }
 
     protected abstract void makeSound();
