@@ -11,17 +11,15 @@ public class Cow extends Animal{
 
     public Cow() {
         super();
-        this.sound = sound;
     }
 
-    public Cow(Food food, String name, String sound) {
-        super(food, name);
-        this.sound = sound;
+    public Cow(String name) {
+        super(Food.GRASS, name);
     }
 
     @Override
     public void makeSound() {
-        System.out.println(sound);
+        System.out.println("Moo");
     }
 
     @Override

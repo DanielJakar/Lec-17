@@ -13,7 +13,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Cow c = new Cow(Food.GRASS , "Berta", "Moo");
+        Cow c = new Cow("Berta");
 
         System.out.println(c.toString());
         c.eat();

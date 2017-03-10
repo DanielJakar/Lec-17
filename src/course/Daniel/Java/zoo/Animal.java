@@ -11,7 +11,7 @@ public abstract class Animal {
     }
 
     public Animal(Food food, String name) {
-        this.food = food;
+        this.food = food ;
         this.name = name;
     }
 
